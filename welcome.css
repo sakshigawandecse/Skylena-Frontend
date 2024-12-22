@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+.container {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.btn {
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.btn:hover {
+    background: #e65c50;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}

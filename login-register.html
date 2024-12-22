@@ -285,7 +285,7 @@
                         otpMessageElement.style.color = 'green';
                         overlay.style.display = 'none'; // Hide overlay after successful OTP verification
                         setTimeout(() => {
-                            window.location.href = 'https://www.netflix.com/in/';
+                            window.location.href = 'welcome.html';
                         }, 1000);
                     } else {
                         otpMessageElement.textContent = 'OTP verification failed! ' + body.message;
