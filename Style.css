@@ -131,9 +131,9 @@ ul li {
 @media (max-width: 540px) {
     .container {
         width: 100%;
-        height: 600px;
+        height: 475px;
         background-image: url('Images/Services/img 8.jpeg'); 
-        background-position: right 30px center; /* Shift image to the right */
+        background-position: right -714px center; /* Shift image to the right */
         background-size: cover;
         background-attachment: fixed;
         display: flex;

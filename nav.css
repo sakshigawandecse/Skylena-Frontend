@@ -348,15 +348,28 @@
             /* Ensures the logo is centered */
         }
         .nav-logo img.logo {
-            max-width: 180px;
+            max-width: 263px;
             /* Adjust size for mobile */
             height: auto;
             margin-left: 15px;
             margin-top: 5px;
         }
         .nav-menu.responsive {
-            top: 60px;
+            top: 119px;
             /* Adjust the position for better visibility */
+        }
+        .nav {
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 120px;
+            background: #c2cfd2;
+            z-index: 100;
+            padding: 0 40px;
+            transition: transform 0.3s ease-in-out;
         }
         .nav-menu {
             position: absolute;
@@ -365,8 +378,8 @@
             flex-direction: column;
             justify-content: center;
             width: 100%;
-            height: 90vh;
-            background: rgba(255, 255, 255, 0.9);
+            height: 69vh;
+            background: #c2cfd2;
             backdrop-filter: blur(20px);
             transition: 0.3s;
             z-index: 1000;
@@ -375,6 +388,7 @@
             flex-direction: column;
             text-align: center;
             padding: 0;
+           
         }
         .nav-menu ul li {
             list-style: none;

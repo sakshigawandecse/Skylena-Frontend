@@ -7,6 +7,7 @@ body {
     padding: 0;
     padding-top: 7%;
     overflow-x: hidden;
+    height: 100%;
 }
 
 /* Flex Container */
@@ -115,6 +116,16 @@ body {
     }
 }
 @media screen and (max-width: 540px) {
+
+    body {
+        overflow-y: scroll;  /* Allow scrolling */
+        -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+        scrollbar-width: none;  /* Hide scrollbar for Firefox */
+    }
+
+    body::-webkit-scrollbar {
+        display: none;  /* Hide scrollbar for Chrome, Safari, and Opera */
+    }
     .flex-container {
         flex-direction: column;
         padding: 10px;
@@ -145,8 +156,15 @@ body {
         margin-bottom: 5px;
     }
 
-    .managed-services-container .image-container img,
-    .customer-experience-container .image-container img {
-        border-radius: 4px;
+    .managed-services-container .image-container img {
+        border-radius: 6px;   /* Slightly larger border-radius for managed services */
+        padding-top: 12%;     /* More padding for managed services */
     }
+    
+    .customer-experience-container .image-container img {
+        border-radius: 4px;   /* Smaller border-radius for customer experience */
+        padding-top: 2%;      /* Less padding for customer experience */
+    }
+    
+
 }

@@ -69,18 +69,26 @@ button.next {
 }
 
 /* Mobile Responsiveness */
+/* For screens with a width of 768px or less */
 @media (max-width: 768px) {
-    body{
-        padding-top: 10%;
+    body {
+        padding-top: 10%; /* Adjust padding on mobile */
     }
+    
     .slider-track img {
         width: 100%; /* Show 1 image at a time on mobile */
+        height: auto; /* Maintain aspect ratio of images */
     }
 }
 
+/* For screens with a width of 540px or less */
 @media (max-width: 540px) {
-    body{
-        padding-top: 10%;
+    body {
+        padding-top: 50%; /* Increase padding for smaller screens */
     }
-  
+
+    .slider-track img {
+        width: 100%; /* Ensure images take full width */
+        height: auto; /* Maintain aspect ratio for small screens */
+    }
 }
